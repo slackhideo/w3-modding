@@ -1,4 +1,4 @@
-# The Witcher 3 modding
+# The Witcher 3 Modding
 
 Experiments with modding The Witcher 3.
 
@@ -12,6 +12,20 @@ GetWitcherPlayer().DisplayHudMessage("My HUD message");
 
 ```
 theGame.GetGuiManager().ShowNotification("My notification message");
+```
+
+### Access Inventory (Class [CInventoryComponent](https://witcher-games.fandom.com/wiki/W3Class_CInventoryComponent))
+
+```
+var inventory : CInventoryComponent;
+inventory = thePlayer.GetInventory();
+```
+
+### Access Stash (Class [CInventoryComponent](https://witcher-games.fandom.com/wiki/W3Class_CInventoryComponent))
+
+```
+var stash : CInventoryComponent;
+stash = GetWitcherPlayer().GetHorseManager().GetInventoryComponent();
 ```
 
 ### Witcher Script Documentation
